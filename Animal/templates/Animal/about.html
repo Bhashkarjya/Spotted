@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="css/fixed.css">
+  	<link rel="stylesheet" href="gallery.css">
+  	<link rel="stylesheet" href="Timeline.css">
+  	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+
+  <style>
+    .lpagefont{
+      font-family: 'Inria Serif', serif;
+    }
+    .imageclass{
+      background-image: url("https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675.jpg");
+      /* background-position: 0px - 118px; */
+      /* background-color: blue; */
+      /* data-stellar-background-ratio="0.5"; */
+      height: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+
+      /* background-position: relative; */
+      /* height: 100px; */
+      /* width: 100px; */
+    }
+
+    .imageclass2{
+      background-image: url("http://getwallpapers.com/wallpaper/full/4/f/e/343325.jpg");
+      /* background-position: 0px - 118px; */
+      /* background-color: blue; */
+      /* data-stellar-background-ratio="0.5"; */
+      height: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+
+      /* background-position: relative; */
+      /* height: 100px; */
+      /* width: 100px; */
+    }
+    body{
+      background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+    }
+    nav a{
+      color: black;
+    }
+    nav div ul li a{
+      color: black;
+    }
+
+    .writeup{
+      padding: 20px;
+    }
+
+    .fill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .fill img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%
+    }
+    .container2{
+      padding: 50px;
+    }
+    .head{
+      text-align:center;
+      text-color:rgba(0,0,0,0);
+    }
+  </style>
+
+  <body>
+
+    <div>
+      <nav class="navbar navbar-toggleable-sm navbar-expand-lg lpagefont navbar-trans">
+        <a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto">
+            <li class=" nav-link active">
+              <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+            </li>
+            <li class="nav-link active">
+              <a class="nav-link" href="{% url 'News_Events' %}">News and Events</a>
+            </li>
+            <li class="nav-link active">
+              <a class="nav-link" href="{% url 'donate' %}">Donate</a>
+            </li>
+            <li class="nav-link active">
+              <a class="nav-link" href="{% url 'volunteer' %}">Volunteer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+<div class="">
+  <h1 class=" head">
+  About Us</h1>
+</div>
+<div class=" container-fluid ">
+
+    <div class="container2">
+    <section class="content-area">
+      <div class="fixed-background">
+
+        <div class="imageclass">
+          <span class="overlay-top-header"></span>
+          <div class="page-title-wrapper">
+            <div class="banner-wrapper container article_heading">
+
+
+                    <!-- <div class="col-xs-6">
+                        <ul id="thim_breadcrumbs" class="thim-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                          <li class="item-home" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" class="bread-link bread-home" href="http://www.fiapo.org/fiaporg" title="Home">
+                              <span itemprop="name">Home</span>
+                            </a>
+                          </li>
+                          <li class="separator separator-home">
+                          </li>
+                          <li class="item-current item-6" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <span itemprop="name" class="bread-current bread-6"> About Us</span>
+                          </li>
+                        </ul>
+                      </div> -->
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="writeup">
+        FIAPO was officially founded in the year 2010; however, the journey began a while ago, at the Asia for Animals conference in 2007!
+        <br>
+        <br>
+        The idea of a coalition was under discussion since 2005, and in 2007, some of the best and the brightest minds of the Indian animal protection community came together, to give birth to FIAPO. By its very name, FIAPO, or the Federation of Indian Animal Protection Organisations, looked to build something that did not exist – an organisation, which could help other organisations grow, with its own augmentation.  An organisation, looking to respond and care for all animals – not only in the present but also the future.
+        <br>
+        <br>
+        Ingraining the ideas that we were formed with, today, we work in collaboration with more than 80 members, 200 supporter organisations and 400 individual activists in over 40 cities – hoping to change the lives of animals across the country, through education, research, lobbying, mobilisation, training and direct action.
+        <br>
+        <br>
+        Supporting, collaborating and training forms a major part of what we do. But at the same time, we also run national campaigns, to ensure that we save and protect countless animals from mindless suffering, on an everyday basis – by fighting for better laws and investing heavily in spreading awareness and education.
+        <br>
+        <br>
+        FIAPO, with support from its member organisations and activists has helped achieve a ban on cetaceans in captivity as well as stopped the establishment of India’s first mega dairy that was proposed to set up with 40,000 cows. It has also rescued animals from over 16 circuses and has set up local networks in 40 cities initiating over 10 different campaigns.
+      </div>
+
+      <div class="offset">
+        <div class="fixed-background">
+          <div class="imageclass2">
+
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+
+
+
+  </div>
+
+    <!-- insert donate etc here -->
+<!-- FOOTER -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">10+</span>
+        <br>Team Departments
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">50+</span>
+        <br>Team Members
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">3+</span>
+        <br>Events Participated
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">150+</span>
+        <br>Sponsors
+      </div>
+    </div>
+
+    <!-- MAIN FOOTER  -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <a href="https://www.facebook.com/PETAIndia/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/petaindia/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/PetaIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/company/peta-india/?originalSubdomain=in"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+    </footer>
+
+  </body>
+</html>

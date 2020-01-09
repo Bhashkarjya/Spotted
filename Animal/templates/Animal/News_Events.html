@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>News and Events</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+.mySlides {display:none;}
+body {
+   background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+}
+
+.head{
+    text-align:center;
+    text-color:rgba(255,0,0,0.5);
+}
+
+</style>
+<body>
+
+  <div>
+    <nav class="navbar navbar-toggleable-sm navbar-expand-lg lpagefont navbar-trans">
+      <a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <li class=" nav-link active">
+            <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+          </li>
+          <li class="nav-link active">
+            <a class="nav-link" href="{% url 'News_Events' %}">News and Events</a>
+          </li>
+          <li class="nav-link active">
+            <a class="nav-link" href="{% url 'donate' %}">Donate</a>
+          </li>
+          <li class="nav-link active">
+            <a class="nav-link" href="{% url 'volunteer' %}">Volunteer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<div style="width:100%" class="container">
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img  src="https://economictimes.indiatimes.com/thumb/msid-67535637,width-600,height-480,resizemode-4/news/politics-and-nation/watch-traditional-bull-taming-event-jallikattu-begins-in-madurai.jpg" style="width:100%">
+  <div style="width:100%" class="w3-display-center w3-large w3-container w3-padding-16 w3-black">
+    <p class="Animal">Animal rights advocacy group, People for Ethical Treatment of Animals (PETA) has
+    written to a Tamil Nadu Minister, whose bull died during a jallikattu event,
+    seeking his support to repeal an act passed to ensure conduct of the bull taming
+    event in the state.</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src= "https://i.pinimg.com/originals/44/d9/8c/44d98cccb725fd3a80c0446b9b2e646d.jpg" style="width:100%">
+  <div style="width:100%" class="w3-display-center w3-large w3-container w3-padding-16 w3-black">
+    A resolution has been passed in the US House of Representatives asking countries
+    like China, South Korea, Vietnam and India to end the slaughter of dogs and cats
+    for human consumption,saying there is no place for such practises in a compassionate society.
+    In a non-controversial voice vote, the US house also passed a bill to ban
+    American people from slaughtering dogs and cats for human consumption.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://i.ytimg.com/vi/pSEAZ7hppXg/maxresdefault.jpg" style="width:100%">
+  <div style="width:100%" class="w3-display-center w3-large w3-container w3-padding-16 w3-black">
+    Seeking to regulate pet shops in the country, the Centre on Friday issued draft
+    rules having multiple provisions to prevent cruelty inflicted on animals kept in
+    such shops. The rules, once notified by the environment ministry after analyzing
+    suggestions of stakeholders, will regulate, among other practices, the capture,
+    housing, breeding and transportation of animals sold in the pet trade.
+
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://image.shutterstock.com/image-photo/tasty-grilled-meat-non-veg-260nw-730913476.jpg" style="width:100%">
+  <div style="100%" class="w3-display-center w3-large w3-container w3-padding-16 w3-black">
+  Animal welfare group PETA India today urged Prime Minister Narendra Modi to "ban" all
+  meat products from menus at all government meetings and events.Taking a cue from reports
+  that Germany's environment minister had recently banned meat from being served at
+  meetings and events,PETA India asked Modi to "lead" India in a similar direction.
+  </div>
+</div>
+
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<!---Footer part -->
+<div class="bg-img">
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20+</span>
+    <br>Our Branches
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Our Volunteers
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">30+</span>
+    <br>Campaigns Undertaken
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5+</span>
+    <br>Sponsors
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64"
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/PETAIndia/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/petaindia/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/PetaIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/peta-india/?originalSubdomain=in"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

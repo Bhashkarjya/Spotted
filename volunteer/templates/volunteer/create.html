@@ -1,0 +1,55 @@
+
+
+{% if error %}
+{{ error }}
+<br />
+<br />
+{% endif %}
+
+<h1>Create</h1>
+
+<form method="POST" action="{% url 'create' %}" enctype="multipart/form-data">
+{% csrf_token %}
+
+Name:
+<br />
+<input type="text" name="Name" />
+<br />
+
+Age:
+<br />
+<input type="number" name="Age" />
+<br />
+
+Campaign_id:
+<br />
+<input type="text" name="Campaign_id" />
+<br />
+
+Email:
+<br />
+<input type="email" name="Email" />
+<br />
+
+PhoneNumber:
+<br />
+<input type="number" name="PhoneNumber" />
+<br />
+
+Country:
+<br />
+<input type="text" name="Country" />
+<br />
+
+State:
+<br />
+<input type="text" name="State" />
+<br />
+
+City:
+<br />
+<input type="text" name="City" />
+<br />
+
+<input class="btn btn-primary" type="submit" value=" Submit and Volunteer!" />
+</form>
